@@ -66,13 +66,13 @@ This project is suitable for:
 
 ## 🍔 Food Items
 
-![Food Items](images/project1.png)
+![Food Items](images/project2.png)
 
 ---
 
 ## ⚙️ Admin Dashboard
 
-![Admin Dashboard](images/project1.png)
+![Admin Dashboard](images/project3.png)
 
 ---
 
