@@ -1,87 +1,237 @@
-# 🥘 Food Order Website Complete Course
-In this course, you'll learn to Create a Complete Dynamic and Fully Functional Website using PHP prrogramming language and MySQL Database.
+# 🥘 Food Order Website
 
+This is a **Food Ordering Website** developed using **Core PHP and MySQL** for my university project at ** ([JKKNIU](https://www.jkkniu.edu.bd/))**.
+This project allows users to browse food items, place orders, and enables admin to manage the entire system.
+
+The main purpose of this project is to learn **PHP CRUD operations**, **Admin Panel Management**, and **Database Integration**.
+
+---
+
+# 🚀 Project Overview
+
+This project includes:
+
+- Food browsing system
+- Category based food listing
+- Easy food ordering system
+- Admin dashboard
+- Order tracking and management
+
+This project is suitable for:
+
+- University Project
+- PHP Beginners
+- Admin Panel Practice
+- Database Learning
+
+---
 
 # ⚙️ Technology Used
+
 1. HTML5
 2. CSS3
-3. Core/Procedural PHP programming language
+3. Core / Procedural PHP
 4. MySQL Relational Database
 
+---
 
 # 🧰 Features
-1. Visitors/Users can browse all the Categories and Food Items. 
-2. They also can order easily from the website.
-3. Admin can Manage Admin, Caegories and Food Items
-4. Admin can also Manage and Track Food Order and Delivery
 
+## User Side
 
-# 🎓 Access the Course
-[Click Here](https://www.youtube.com/watch?v=ZBgTzx46B8s&list=PLBLPjjQlnVXXBheMQrkv3UROskC0K1ctW) and Learn to develop a fully functional and dynamic **"Food Order System"** with PHP programming language and MySQL Database.
+- Browse all categories
+- View food items
+- Place order easily
+- Simple user interface
 
+## Admin Side
 
-## 👏 Support Developer
-1. Subscribe & Share my YouTube Channel - https://bit.ly/vijay-thapa-online-courses
-2. Add a Star 🌟  to this 👆 Repository
+- Admin Login
+- Manage Admin
+- Manage Categories
+- Manage Food Items
+- Manage Orders
+- Track Delivery
+- Update Order Status
 
+---
 
+# 📸 Project Screenshots
 
-## Donate
+## 🏠 Homepage
 
-**[PayPal](https://bit.ly/support-vijay-thapa)**
+![Homepage](images/project1.png)
 
-**[Buy me a Coffee  ☕️](https://www.buymeacoffee.com/vijaythapa)**
+---
 
-**Donate by wire transfer:** E-Mail at *donate@vijaythapa.com* for wire transfer details. 
+## 🍔 Food Items
 
+![Food Items](images/project1.png)
 
-## 📖  How to Download the Project and Run on your PC?
+---
 
-### Pre-Requisites:
+## ⚙️ Admin Dashboard
 
-1. Download and Install XAMPP
+![Admin Dashboard](images/project1.png)
 
-[Click Here to Download](https://www.apachefriends.org/index.html)
+---
 
-2. Install any Text Editor (Sublime Text or Visual Studio Code or Atom or Brackets)
+# 📁 Project Folder Structure
 
-### Installation
-
-1. Download as as Zip or Clone this project
-2. Move this project to Root Directory
 ```
-Local Disc C: -> xampp -> htdocs -> 'this project'
+food-order
+│
+├── admin
+├── images
+│   └── project1.png
+├── config
+├── css
+├── js
+├── database
+├── index.php
+└── README.md
 ```
-*Local Disk C is the location where xampp was installed*
 
-3. Open XAMPP Control Panel and Start 'Apache' and 'MySQL'
+---
 
-4. Import Database
+# 📖 How to Download the Project and Run on your PC
 
-a. Open 'phpmyadmin' in your browser
-b. Create a Database 
-c. Import the SQL file provided with this project
+## Pre-Requisites
 
-5. Make Changes to settings
+### 1. Download and Install XAMPP
 
-Go to 'config' folder and Open 'constants.php' file. Then make changes on following constants
+https://www.apachefriends.org/index.html
+
+### 2. Install any Text Editor
+
+- Visual Studio Code
+- Sublime Text
+- Atom
+- Brackets
+
+---
+
+# ⚡ Installation
+
+## 1. Download or Clone Project
+
+Download ZIP or Clone this repository.
+
+---
+
+## 2. Move Project to Root Directory
+
+Move project folder to:
+
+```
+C:\xampp\htdocs\food-order
+```
+
+---
+
+## 3. Start XAMPP
+
+Open XAMPP Control Panel and Start:
+
+- Apache
+- MySQL
+
+---
+
+## 4. Import Database
+
+1. Open Browser
+2. Go to phpMyAdmin
+3. Create new Database
+4. Import SQL file
+
+---
+
+## 5. Configure Database
+
+Go to:
+
+```
+config/constants.php
+```
+
+Update the following code:
+
 ```php
-<?php 
-//Start Session
+<?php
+
 session_start();
 
-//Create Constants to Store Non Repeating Values
-define('SITEURL', 'http://localhost/food-order/'); //Update the home URL of the project if you have changed port number or it's live on server
+define('SITEURL', 'http://localhost/food-order/');
 define('LOCALHOST', 'localhost');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', '');
 define('DB_NAME', 'food-order');
-    
-$conn = mysqli_connect(LOCALHOST, DB_USERNAME, DB_PASSWORD) or die(mysqli_error()); //Database Connection
-$db_select = mysqli_select_db($conn, DB_NAME) or die(mysqli_error()); //SElecting Database 
+
+$conn = mysqli_connect(LOCALHOST, DB_USERNAME, DB_PASSWORD) or die(mysqli_error());
+$db_select = mysqli_select_db($conn, DB_NAME) or die(mysqli_error());
 
 ?>
 ```
 
-6. Now, Open the project in your browser. It should run perfectly.
+---
 
+## 6. Run Project
+
+Open browser and go to:
+
+```
+http://localhost/food-order
+```
+
+---
+
+# 🔐 Admin Panel
+
+Admin Login URL:
+
+```
+http://localhost/food-order/admin
+```
+
+Example Login:
+
+Username: admin
+Password: admin
+
+---
+
+# 🎯 Learning Outcomes
+
+After completing this project you will learn:
+
+- PHP CRUD Operations
+- Admin Panel Development
+- Session Handling
+- Image Upload System
+- Order Management
+- MySQL Database Integration
+
+---
+
+# 🚀 Future Improvements
+
+- Online Payment Integration
+- User Login System
+- Search System
+- Responsive Design
+- Email Notification
+
+---
+
+# 👨‍💻 Author
+
+MD. Raful Mia
+University Project
+**JKKNIU ([Jatiya Kabi Kazi Nazrul Islam University](https://www.jkkniu.edu.bd/))**
+
+---
+
+# ⭐ Support
+
+If you like this project, give it a ⭐ on GitHub.
